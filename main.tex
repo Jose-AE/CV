@@ -1,0 +1,109 @@
+
+
+
+\documentclass[11pt,a4paper,SF Pro Disp]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvtheme[black]{classic} 
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage{fontspec}
+
+% Set the primary font (Lato) and define fallback fonts (Arial, Times New Roman)
+% Attempt to set Lato as the primary font
+\setmainfont[
+    Path = ./SF-Pro-Display/,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-RegularItalic,
+    BoldItalicFont = *-BoldItalic
+]{SF-Pro-Display}
+% adjust the page margins
+\usepackage[scale=0.92]{geometry}
+\usepackage{xpatch}
+
+
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{}{Jose Luis Almeida Esparza}
+\phone{+52 55 1649 6036}                     
+\email{joseluis.almeidaesparza@gmail.com}                       
+\social[github]{Jose-AE} 
+\social[linkedin]{Jose-AE} 
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry
+{Aug 2022 -- Jul 2026}
+{Bachelor's Degree in Computer Science \& Technology}
+{}
+{}
+{}
+{Monterrey Institute of Technology and Higher Education, Mexico City, Mexico}
+
+
+
+\section{Technical Skills}
+\cvitemwithcomment{Languages:}{JavaScript/TypeScript, Python, , C++, C\#}{}
+\cvitemwithcomment{Web Dev:}{CSS/HTML, React, Tailwind, Node.js, Express.js, Next.js}{}
+\cvitemwithcomment{Dev Tools}{Git, Docker, Postman}{}
+
+
+\section{Experience \& Notable Projects}
+% \cventry{years}{degree or job title}{institution or employer}{city}{grade}{description}
+
+
+\cventry{July 2024 -- Present}{Chief Technology Officer (CTO)}{The Pueblito}{}{}
+{I lead the technical development of our innovative marketplace platform connecting SMBs and large companies with delivery personnel and logistics services. I spearheaded the development of our web-based MVP using Next.js, TypeScript, and MongoDB, with plans to expand to a React Native mobile app. My responsibilities include designing and implementing a scalable architecture to support our transition from serverless functions to a custom Node.js backend. I played a key role in pivoting our business model and preparing for the launch of our first product version. Additionally, I contributed to creating a demo for potential early adopters, aiming to build a waitlist for our MVP launch.}
+
+
+
+\vspace{1em}
+\cventry{Jun -- Jul 2022}{Teaching Assistant at Harvard Summer Camp}{CELEHS}{Harvard Medical School}{}
+{Recognized as an outstanding participant at the 2021 summer camp, leading to a Teaching Assistant role in 2022. Collaborated with instructors to design course content and create instructional materials. Used Python and libraries like pandas, numpy, scikit-learn, and TensorFlow to teach data science concepts.}
+
+
+
+
+\vspace{1em}
+\cventry{Jan -- Jul 2024}{Geometric Farm - Educational Math Videogame}{Escuela Metropolitana}{}{}
+{Developed an engaging educational video game in Unity, emphasizing math concepts like shape definitions and arithmetic operations. Built a backend analytics system with Express.js and TypeScript, using MySQL for data storage. Created a React-based teacher dashboard for visualizing student progress, leaderboards, and success rates.}
+
+
+\vspace{1em}
+\cventry{Jul -- Aug 2023}{Unofficial University Student Platform}{Personal Project}{}{}
+{Created an unofficial university student platform to address shortcomings in the official one. Reversed engineered the platform to identify and exploit unsecured APIs for integration into my customized app. Developed a user-friendly, efficient version that outperformed the official platform.}
+
+\vspace{1em}
+\cventry{Sep -- Sep 2023}{HSR Warp Calculator}{Personal Project}{}{}
+{Developed a web app to estimate in-game item probabilities for "Honkai Star Rail," serving a large player community. Implemented a precise algorithm for accurate results and designed a user-friendly interface. The app gained notable success, attracting over 1,000 daily active users.}
+
+
+\vspace{1em}
+\cventry{Feb -- Mar 2023}{OsomarScript Programming Language}{Personal Project}{}{}
+{Created a custom programming language, OsomarScript, in TypeScript, with a lexer, parser, and interpreter for execution. Added a module system for better code organization and provided comprehensive documentation. Gained expertise in language theory, lexing, parsing, and compiler design. Published OsomarScript on npm for public use and contribution.}
+
+
+
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Spanish}{Native}{}
+
+
+
+\end{document}
+
+
+
